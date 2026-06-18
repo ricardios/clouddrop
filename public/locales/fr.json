@@ -1,0 +1,330 @@
+{
+  "seo": {
+    "title": "CloudDrop - Partage de fichiers P2P sécurisé",
+    "description": "CloudDrop - Partage de fichiers P2P sécurisé, sans installation, chiffrement de bout en bout, transfert multi-appareils",
+    "keywords": "transfert de fichiers,P2P,chiffrement de bout en bout,partage de fichiers,WebRTC,transfert sécurisé,multi-appareils",
+    "ogTitle": "CloudDrop - Partage de fichiers P2P sécurisé",
+    "ogDescription": "Outil de partage de fichiers P2P sécurisé, sans installation, chiffrement de bout en bout, transfert instantané multi-appareils"
+  },
+  "common": {
+    "ok": "OK",
+    "cancel": "Annuler",
+    "close": "Fermer",
+    "accept": "Accepter",
+    "decline": "Refuser",
+    "send": "Envoyer",
+    "save": "Enregistrer",
+    "copy": "Copier",
+    "copied": "Copié",
+    "loading": "Chargement...",
+    "connecting": "Connexion...",
+    "connected": "Connecté",
+    "disconnected": "Déconnecté",
+    "confirmAction": "Confirmer l'action",
+    "confirmMessage": "Êtes-vous sûr de vouloir effectuer cette action ?",
+    "github": "GitHub",
+    "join": "Rejoindre la salle"
+  },
+  "deviceNames": {
+    "adjectives": [
+      "Rapide",
+      "Brillant",
+      "Cool",
+      "Agile",
+      "Élégant",
+      "Volant",
+      "Vif",
+      "Stable"
+    ],
+    "nouns": [
+      "Phénix",
+      "Dragon",
+      "Tigre",
+      "Aigle",
+      "Faucon",
+      "Pégase",
+      "Cerf",
+      "Loup"
+    ]
+  },
+  "header": {
+    "deviceLabel": "Appareil :",
+    "editDeviceName": "Modifier le nom de l'appareil",
+    "roomLabel": "Salle :",
+    "clickToCopy": "Cliquer pour copier",
+    "refreshRoom": "Actualiser la salle",
+    "shareRoom": "Partager la salle",
+    "joinRoom": "Rejoindre une autre salle",
+    "connectionStatus": {
+      "connected": "Connecté au serveur",
+      "disconnected": "Déconnecté du serveur",
+      "connecting": "Connexion au serveur..."
+    }
+  },
+  "emptyState": {
+    "title": "En attente d'appareils",
+    "description": "Laissez d'autres appareils rejoindre avec le <strong>même code de salle</strong> pour se découvrir mutuellement et transférer des fichiers",
+    "hint": "Lors de l'utilisation entre appareils, partagez le code de salle pour vous assurer que tous les appareils rejoignent la même salle",
+    "shareRoomBtn": "Partager le code de salle",
+    "joinRoomBtn": "Rejoindre une autre salle",
+    "quickJoinLabel": "Ou entrez le code de salle directement"
+  },
+  "security": {
+    "title": "Sécurité avant tout, confidentialité garantie",
+    "subtitle": "Nous utilisons une technologie de sécurité de pointe pour garantir que vos transferts de fichiers sont sûrs et fiables",
+    "endToEndEncryption": {
+      "title": "Chiffrement de bout en bout",
+      "desc": "Utilisant le chiffrement AES-256-GCM, les fichiers sont chiffrés avant la transmission, seul le destinataire peut les déchiffrer",
+      "tooltip": "Utilisant l'algorithme de chiffrement AES-256-GCM, les fichiers sont chiffrés avant la transmission, seul le destinataire peut les déchiffrer, même si les données sont interceptées elles ne peuvent pas être lues"
+    },
+    "noServerStorage": {
+      "title": "Aucun stockage serveur",
+      "desc": "Les fichiers ne sont stockés sur aucun serveur, détruits immédiatement après le transfert, ne laissant aucune trace",
+      "tooltip": "Les fichiers ne sont stockés sur aucun serveur, les données sont transférées directement entre les appareils, automatiquement détruites après le transfert, ne laissant aucune trace"
+    },
+    "p2pDirect": {
+      "title": "Transfert P2P direct",
+      "desc": "Privilégie la technologie WebRTC pour une connexion directe pair-à-pair, plus rapide et plus privée",
+      "tooltip": "Privilégie la technologie WebRTC pour une connexion directe pair-à-pair entre appareils, pas besoin de serveur relais, transfert plus rapide, latence plus faible, meilleure confidentialité"
+    },
+    "openSource": {
+      "title": "Open Source et transparent",
+      "desc": "Code entièrement open source, soumis à l'examen de la communauté, sécurité prouvée",
+      "tooltip": "Code source complet ouvert sur GitHub, examiné par des développeurs et des experts en sécurité du monde entier, sécurité prouvée par la transparence"
+    },
+    "badges": {
+      "zeroKnowledge": "Architecture zéro connaissance",
+      "noRegistration": "Aucune inscription requise",
+      "noDataCollection": "Aucune collecte de données"
+    }
+  },
+  "transfer": {
+    "modes": {
+      "label": "Mode de transfert",
+      "p2p": "P2P direct",
+      "p2pTooltip": "Connexion P2P directe entre appareils, pas besoin de relais serveur, plus rapide et latence plus faible",
+      "relay": "Transfert relais",
+      "relayTooltip": "Transféré via relais serveur, les données sont toujours chiffrées de bout en bout pour une transmission sécurisée",
+      "connecting": "Connexion",
+      "waiting": "En attente de confirmation"
+    },
+    "connection": {
+      "establishing": "Établissement de la connexion...",
+      "slow": "Le réseau est lent, essai du transfert relais...",
+      "failedSwitchRelay": "Connexion échouée, passage au transfert relais",
+      "switchedToRelay": "Passage au transfert relais pour une connexion stable",
+      "timeoutSwitchRelay": "Délai de connexion dépassé, passage au transfert relais"
+    },
+    "sending": "Envoi",
+    "receiving": "Réception",
+    "waitingConfirm": "En attente de confirmation",
+    "waitingFor": "En attente de confirmation de {{name}}...",
+    "cancelTransfer": "Annuler le transfert",
+    "transferCancelled": "Transfert annulé",
+    "transferComplete": "Transfert terminé",
+    "releaseToDrop": "Relâcher pour envoyer le fichier",
+    "fileCount": {
+      "one": "{{count}} fichier",
+      "other": "{{count}} fichiers"
+    },
+    "deviceCount": {
+      "one": "{{count}} appareil",
+      "other": "{{count}} appareils"
+    }
+  },
+  "fileRequest": {
+    "title": "Fichier reçu",
+    "from": "De :",
+    "securityNotice": "Fichier chiffré en transit, sûr et fiable",
+    "alwaysAccept": "Toujours accepter les fichiers de cet appareil",
+    "trustHint": "Une fois approuvé, les fichiers de cet appareil seront automatiquement acceptés"
+  },
+  "deviceName": {
+    "editTitle": "Modifier le nom de l'appareil",
+    "description": "Définissez un nom convivial pour faciliter l'identification par d'autres appareils",
+    "placeholder": "Entrez le nom de l'appareil",
+    "updated": "Nom de l'appareil mis à jour"
+  },
+  "room": {
+    "joinTitle": "Rejoindre la salle",
+    "joinDesc": "Entrez le code de salle pour rejoindre la salle où se trouvent d'autres appareils",
+    "placeholder": "Entrez le code de salle à 6 chiffres",
+    "passwordPlaceholder": "Mot de passe de la salle (au moins 6 caractères)",
+    "passwordRequired": "Cette salle nécessite un mot de passe pour y accéder",
+    "invalidCode": "Format de code de salle invalide (nécessite 6 caractères alphanumériques)",
+    "createSecure": "Créer une salle chiffrée",
+    "createSecureDesc": "Créer une salle chiffrée, seuls les utilisateurs avec le mot de passe peuvent y accéder",
+    "roomCode": "Code de salle",
+    "roomCodePlaceholder": "6 caractères alphanumériques",
+    "password": "Mot de passe de la salle",
+    "passwordMinLength": "Au moins 6 caractères",
+    "passwordStrength": {
+      "weak": "Faible",
+      "fair": "Correct",
+      "good": "Bon",
+      "strong": "Fort"
+    },
+    "securityFeatures": {
+      "doubleEncryption": "Double chiffrement de bout en bout",
+      "mitm": "Empêche les attaques de l'homme du milieu",
+      "noServerStorage": "Mot de passe non stocké sur le serveur"
+    },
+    "createSecureBtn": "Créer une salle chiffrée",
+    "createSuccess": "Salle chiffrée créée avec succès",
+    "passwordError": "Mot de passe incorrect",
+    "alreadySecure": "Déjà dans une salle chiffrée",
+    "secureRoomActive": "Salle chiffrée - Protection par mot de passe activée",
+    "clickToCreateSecure": "Cliquer pour créer une salle chiffrée",
+    "autoAssigning": "Attribution automatique...",
+    "switchedToRoom": "Passage à la nouvelle salle : {{room}}",
+    "autoAssigned": "Rejoint la salle {{room}}, partagez le code de salle avec d'autres appareils"
+  },
+  "share": {
+    "title": "Partager la salle",
+    "qrHint": "Scannez le code QR pour rejoindre la salle",
+    "roomCode": "Code de salle",
+    "copyCode": "Copier le code de salle",
+    "copyLink": "Copier le lien",
+    "moreWays": "Plus d'options",
+    "hint": "Laissez d'autres appareils rejoindre ce code de salle pour transférer des fichiers",
+    "linkCopied": "Lien copié",
+    "roomCodeCopied": "Code de salle copié",
+    "nativeShareTitle": "CloudDrop - Rejoindre la salle",
+    "nativeShareText": "Rejoignez la salle {{room}} pour transférer des fichiers"
+  },
+  "chat": {
+    "title": "Historique des messages",
+    "titleWithPeer": "Discussion avec {{name}}",
+    "placeholder": "Tapez un message...",
+    "removeImage": "Supprimer l'image",
+    "imagePreview": "Aperçu",
+    "imageFullscreen": "Aperçu plein écran",
+    "emptyState": {
+      "icon": "💬",
+      "text": "Pas encore de messages",
+      "hint": "Envoyez votre premier message ou image ci-dessous"
+    },
+    "sending": "Envoi...",
+    "failed": "Échec · Appuyez pour réessayer",
+    "justNow": "À l'instant",
+    "minutesAgo": "Il y a {{minutes}} min",
+    "hoursAgo": "Il y a {{hours}} h",
+    "copyMessage": "Copier le message",
+    "copyImage": "Copier l'image",
+    "attachImage": "Envoyer une image",
+    "imageSent": "Image envoyée",
+    "imageSendFailed": "Échec d'envoi de l'image : {{error}}",
+    "imagePreviewFailed": "Échec de l'aperçu de l'image : {{error}}",
+    "receivedImage": "{{name}} a envoyé une image",
+    "copyNotSupported": "Votre navigateur ne supporte pas la copie d'images, veuillez faire un clic droit pour copier manuellement",
+    "imageCopied": "Image copiée dans le presse-papiers",
+    "undecryptable": "[Message non déchiffrable]",
+    "undecryptableRelay": "[Message de relais non déchiffrable]"
+  },
+  "download": {
+    "title": "Fichier reçu",
+    "saveFile": "Enregistrer le fichier",
+    "saved": "Enregistré : {{name}}"
+  },
+  "toast": {
+    "peerJoined": "{{name}} a rejoint",
+    "peerLeft": "{{name}} est parti",
+    "fileSent": "Envoyé : {{name}}",
+    "fileDeclined": "{{name}} a refusé de recevoir le fichier",
+    "fileTimeout": "Demande de fichier expirée, pas de réponse du destinataire",
+    "sendFailed": "Échec d'envoi : {{error}}",
+    "messageSent": "Message envoyé",
+    "autoAccepting": "Acceptation automatique du fichier de {{name}} : {{file}}",
+    "peerRenamed": "{{oldName}} a été renommé en {{newName}}",
+    "retryFailed": "Échec de la nouvelle tentative : {{error}}",
+    "trusted": "Appareil approuvé : {{name}}",
+    "untrusted": "Appareil non approuvé : {{name}}",
+    "noDevices": "Aucun appareil disponible",
+    "selectDevice": "Veuillez cliquer sur l'appareil cible pour envoyer le fichier",
+    "selectDeviceForText": "Veuillez cliquer sur le bouton message de l'appareil cible pour envoyer du texte",
+    "copyFailed": "Échec de la copie",
+    "shareNotSupported": "Votre navigateur ne supporte pas le partage",
+    "shareFailed": "Échec du partage",
+    "invalidRoomCode": "Veuillez entrer le code de salle complet à 6 chiffres",
+    "notificationPermissionDenied": "Permission de notification du navigateur refusée"
+  },
+  "settings": {
+    "title": "Paramètres",
+    "deviceName": "Nom de l'appareil",
+    "currentRoom": "Salle actuelle",
+    "connectionStatus": "État de la connexion",
+    "theme": {
+      "title": "Thème",
+      "description": "Choisissez le thème de l’interface",
+      "system": "Système",
+      "light": "Clair",
+      "dark": "Sombre"
+    },
+    "trustedDevices": "Appareils approuvés",
+    "trustedDevicesHint": "Les fichiers des appareils approuvés seront automatiquement acceptés",
+    "noTrustedDevices": "Aucun appareil approuvé",
+    "unknownBrowser": "Navigateur inconnu",
+    "clickToUntrust": "Cliquer pour retirer l'approbation",
+    "edit": "Modifier",
+    "untrust": "Retirer l'approbation",
+    "confirmUntrust": "Êtes-vous sûr de vouloir retirer l'approbation de \"<strong>{{name}}</strong>\" ?<br><br><span style=\"color: var(--text-muted)\">Après retrait, les fichiers de cet appareil nécessiteront une confirmation manuelle.</span>",
+    "keepTrust": "Garder l'approbation",
+    "relayFallback": {
+      "title": "Basculement relais",
+      "description": "Basculement automatique vers le relais en cas d'échec P2P",
+      "timeout": "Délai de basculement"
+    },
+    "prewarm": {
+      "title": "Préchauffage connexion",
+      "description": "Établit des connexions préalables lors de la découverte"
+    },
+    "notifications": {
+      "title": "Notifications du navigateur",
+      "description": "Afficher les notifications du navigateur lors de la réception de fichiers ou de messages"
+    }
+  },
+  "navigation": {
+    "devices": "Appareils",
+    "room": "Salle",
+    "send": "Envoyer",
+    "share": "Partager",
+    "settings": "Paramètres"
+  },
+  "quickActions": {
+    "title": "Envoyer à...",
+    "sendFile": "Envoyer un fichier",
+    "sendFileDesc": "Sélectionner un fichier à envoyer à l'appareil",
+    "sendText": "Envoyer du texte",
+    "sendTextDesc": "Envoyer un message texte ou un lien"
+  },
+  "fileTypes": {
+    "image": "Image",
+    "video": "Vidéo",
+    "audio": "Audio",
+    "document": "Document",
+    "archive": "Archive",
+    "code": "Code",
+    "file": "Fichier"
+  },
+  "deviceTypes": {
+    "desktop": "Bureau",
+    "mobile": "Mobile",
+    "tablet": "Tablette",
+    "unknown": "Appareil inconnu"
+  },
+  "errors": {
+    "connectionFailed": "Échec de la connexion",
+    "transferFailed": "Échec du transfert",
+    "fileTooBig": "Fichier trop volumineux",
+    "unsupportedBrowser": "Navigateur non supporté",
+    "networkError": "Erreur réseau",
+    "fileReadFailed": "Échec de la lecture du fichier",
+    "imageLoadFailed": "Échec du chargement de l'image"
+  },
+  "notification": {
+    "fileReceived": "Nouveau fichier reçu",
+    "fileReceivedBody": "{{sender}} vous a envoyé un fichier : {{file}}",
+    "messageReceived": "Nouveau message",
+    "messageReceivedBody": "{{sender}} vous a envoyé un message"
+  }
+}

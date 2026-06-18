@@ -1,0 +1,330 @@
+{
+  "seo": {
+    "title": "CloudDrop - Compartir archivos P2P seguro",
+    "description": "CloudDrop - Compartir archivos P2P seguro, sin instalación, cifrado de extremo a extremo, transferencia entre dispositivos",
+    "keywords": "transferencia de archivos,P2P,cifrado de extremo a extremo,compartir archivos,WebRTC,transferencia segura,entre dispositivos",
+    "ogTitle": "CloudDrop - Compartir archivos P2P seguro",
+    "ogDescription": "Herramienta segura para compartir archivos P2P, sin instalación, cifrado de extremo a extremo, transferencia instantánea entre dispositivos"
+  },
+  "common": {
+    "ok": "Aceptar",
+    "cancel": "Cancelar",
+    "close": "Cerrar",
+    "accept": "Aceptar",
+    "decline": "Rechazar",
+    "send": "Enviar",
+    "save": "Guardar",
+    "copy": "Copiar",
+    "copied": "Copiado",
+    "loading": "Cargando...",
+    "connecting": "Conectando...",
+    "connected": "Conectado",
+    "disconnected": "Desconectado",
+    "confirmAction": "Confirmar acción",
+    "confirmMessage": "¿Está seguro de que desea realizar esta acción?",
+    "github": "GitHub",
+    "join": "Unirse a sala"
+  },
+  "deviceNames": {
+    "adjectives": [
+      "Veloz",
+      "Brillante",
+      "Genial",
+      "Rápido",
+      "Elegante",
+      "Volador",
+      "Ágil",
+      "Estable"
+    ],
+    "nouns": [
+      "Fénix",
+      "Dragón",
+      "Tigre",
+      "Águila",
+      "Halcón",
+      "Pegaso",
+      "Ciervo",
+      "Lobo"
+    ]
+  },
+  "header": {
+    "deviceLabel": "Dispositivo:",
+    "editDeviceName": "Editar nombre del dispositivo",
+    "roomLabel": "Sala:",
+    "clickToCopy": "Clic para copiar",
+    "refreshRoom": "Actualizar sala",
+    "shareRoom": "Compartir sala",
+    "joinRoom": "Unirse a otra sala",
+    "connectionStatus": {
+      "connected": "Conectado al servidor",
+      "disconnected": "Desconectado del servidor",
+      "connecting": "Conectando al servidor..."
+    }
+  },
+  "emptyState": {
+    "title": "Esperando dispositivos",
+    "description": "Deja que otros dispositivos se unan usando el <strong>mismo código de sala</strong> para descubrirse mutuamente y transferir archivos",
+    "hint": "Al usar entre dispositivos, comparte el código de sala para asegurar que todos los dispositivos se unan a la misma sala",
+    "shareRoomBtn": "Compartir código de sala",
+    "joinRoomBtn": "Unirse a otra sala",
+    "quickJoinLabel": "O ingresa el código de sala directamente"
+  },
+  "security": {
+    "title": "Seguridad primero, privacidad garantizada",
+    "subtitle": "Utilizamos tecnología de seguridad líder en la industria para garantizar que sus transferencias de archivos sean seguras y confiables",
+    "endToEndEncryption": {
+      "title": "Cifrado de extremo a extremo",
+      "desc": "Usando cifrado AES-256-GCM, los archivos se cifran antes de la transmisión, solo el receptor puede descifrarlos",
+      "tooltip": "Usando el algoritmo de cifrado AES-256-GCM, los archivos se cifran antes de la transmisión, solo el receptor puede descifrarlos, incluso si los datos son interceptados no se pueden leer"
+    },
+    "noServerStorage": {
+      "title": "Sin almacenamiento en servidor",
+      "desc": "Los archivos no se almacenan en ningún servidor, se destruyen inmediatamente después de la transferencia, sin dejar rastro",
+      "tooltip": "Los archivos no se almacenan en ningún servidor, los datos se transfieren directamente entre dispositivos, se destruyen automáticamente después de la transferencia, sin dejar rastro"
+    },
+    "p2pDirect": {
+      "title": "Transferencia P2P directa",
+      "desc": "Prioriza la tecnología WebRTC para conexión directa punto a punto, más rápida y privada",
+      "tooltip": "Prioriza la tecnología WebRTC para conexión directa punto a punto entre dispositivos, sin necesidad de servidor de retransmisión, transferencia más rápida, menor latencia, mejor privacidad"
+    },
+    "openSource": {
+      "title": "Código abierto y transparente",
+      "desc": "Código completamente de código abierto, sujeto a revisión de la comunidad, seguridad comprobada",
+      "tooltip": "Código fuente completo abierto en GitHub, revisado por desarrolladores y expertos en seguridad de todo el mundo, seguridad comprobada a través de la transparencia"
+    },
+    "badges": {
+      "zeroKnowledge": "Arquitectura de conocimiento cero",
+      "noRegistration": "Sin registro requerido",
+      "noDataCollection": "Sin recolección de datos"
+    }
+  },
+  "transfer": {
+    "modes": {
+      "label": "Modo de transferencia",
+      "p2p": "P2P directo",
+      "p2pTooltip": "Conexión P2P directa entre dispositivos, sin necesidad de retransmisión del servidor, más rápida y con menor latencia",
+      "relay": "Transferencia por retransmisión",
+      "relayTooltip": "Transferido a través de retransmisión del servidor, los datos aún están cifrados de extremo a extremo para una transmisión segura",
+      "connecting": "Conectando",
+      "waiting": "Esperando confirmación"
+    },
+    "connection": {
+      "establishing": "Estableciendo conexión...",
+      "slow": "La red está lenta, intentando transferencia por retransmisión...",
+      "failedSwitchRelay": "Conexión fallida, cambiado a transferencia por retransmisión",
+      "switchedToRelay": "Cambiado a transferencia por retransmisión para conexión estable",
+      "timeoutSwitchRelay": "Tiempo de conexión agotado, cambiado a transferencia por retransmisión"
+    },
+    "sending": "Enviando",
+    "receiving": "Recibiendo",
+    "waitingConfirm": "Esperando confirmación",
+    "waitingFor": "Esperando que {{name}} confirme...",
+    "cancelTransfer": "Cancelar transferencia",
+    "transferCancelled": "Transferencia cancelada",
+    "transferComplete": "Transferencia completada",
+    "releaseToDrop": "Soltar para enviar archivo",
+    "fileCount": {
+      "one": "{{count}} archivo",
+      "other": "{{count}} archivos"
+    },
+    "deviceCount": {
+      "one": "{{count}} dispositivo",
+      "other": "{{count}} dispositivos"
+    }
+  },
+  "fileRequest": {
+    "title": "Archivo recibido",
+    "from": "De:",
+    "securityNotice": "Archivo cifrado en tránsito, seguro y confiable",
+    "alwaysAccept": "Siempre aceptar archivos de este dispositivo",
+    "trustHint": "Una vez confiado, los archivos de este dispositivo serán aceptados automáticamente"
+  },
+  "deviceName": {
+    "editTitle": "Editar nombre del dispositivo",
+    "description": "Establezca un nombre amigable para facilitar la identificación por otros dispositivos",
+    "placeholder": "Ingrese nombre del dispositivo",
+    "updated": "Nombre del dispositivo actualizado"
+  },
+  "room": {
+    "joinTitle": "Unirse a sala",
+    "joinDesc": "Ingrese el código de sala para unirse a la sala donde están otros dispositivos",
+    "placeholder": "Ingrese código de sala de 6 dígitos",
+    "passwordPlaceholder": "Contraseña de sala (mínimo 6 caracteres)",
+    "passwordRequired": "Esta sala requiere contraseña para unirse",
+    "invalidCode": "Formato de código de sala inválido (requiere 6 caracteres alfanuméricos)",
+    "createSecure": "Crear sala cifrada",
+    "createSecureDesc": "Crear una sala cifrada, solo usuarios con la contraseña pueden unirse",
+    "roomCode": "Código de sala",
+    "roomCodePlaceholder": "6 caracteres alfanuméricos",
+    "password": "Contraseña de sala",
+    "passwordMinLength": "Mínimo 6 caracteres",
+    "passwordStrength": {
+      "weak": "Débil",
+      "fair": "Regular",
+      "good": "Buena",
+      "strong": "Fuerte"
+    },
+    "securityFeatures": {
+      "doubleEncryption": "Cifrado doble de extremo a extremo",
+      "mitm": "Previene ataques de intermediario",
+      "noServerStorage": "Contraseña no almacenada en servidor"
+    },
+    "createSecureBtn": "Crear sala cifrada",
+    "createSuccess": "Sala cifrada creada exitosamente",
+    "passwordError": "Contraseña incorrecta",
+    "alreadySecure": "Ya está en una sala cifrada",
+    "secureRoomActive": "Sala cifrada - Protección con contraseña habilitada",
+    "clickToCreateSecure": "Clic para crear sala cifrada",
+    "autoAssigning": "Asignando automáticamente...",
+    "switchedToRoom": "Cambiado a nueva sala: {{room}}",
+    "autoAssigned": "Se unió a la sala {{room}}, comparta el código de sala con otros dispositivos"
+  },
+  "share": {
+    "title": "Compartir sala",
+    "qrHint": "Escanear código QR para unirse a la sala",
+    "roomCode": "Código de sala",
+    "copyCode": "Copiar código de sala",
+    "copyLink": "Copiar enlace",
+    "moreWays": "Más opciones",
+    "hint": "Deje que otros dispositivos se unan con este código de sala para transferir archivos",
+    "linkCopied": "Enlace copiado",
+    "roomCodeCopied": "Código de sala copiado",
+    "nativeShareTitle": "CloudDrop - Unirse a sala",
+    "nativeShareText": "Únase a la sala {{room}} para transferir archivos"
+  },
+  "chat": {
+    "title": "Historial de mensajes",
+    "titleWithPeer": "Chat con {{name}}",
+    "placeholder": "Escriba un mensaje...",
+    "removeImage": "Eliminar imagen",
+    "imagePreview": "Vista previa",
+    "imageFullscreen": "Vista previa en pantalla completa",
+    "emptyState": {
+      "icon": "💬",
+      "text": "Aún no hay mensajes",
+      "hint": "Envíe su primer mensaje o imagen abajo"
+    },
+    "sending": "Enviando...",
+    "failed": "Fallido · Toque para reintentar",
+    "justNow": "Ahora mismo",
+    "minutesAgo": "Hace {{minutes}} min",
+    "hoursAgo": "Hace {{hours}} h",
+    "copyMessage": "Copiar mensaje",
+    "copyImage": "Copiar imagen",
+    "attachImage": "Enviar imagen",
+    "imageSent": "Imagen enviada",
+    "imageSendFailed": "Envío de imagen fallido: {{error}}",
+    "imagePreviewFailed": "Vista previa de imagen fallida: {{error}}",
+    "receivedImage": "{{name}} envió una imagen",
+    "copyNotSupported": "Su navegador no soporta copiar imágenes, por favor haga clic derecho para copiar manualmente",
+    "imageCopied": "Imagen copiada al portapapeles",
+    "undecryptable": "[Mensaje cifrado no descifrable]",
+    "undecryptableRelay": "[Mensaje de retransmisión no descifrable]"
+  },
+  "download": {
+    "title": "Archivo recibido",
+    "saveFile": "Guardar archivo",
+    "saved": "Guardado: {{name}}"
+  },
+  "toast": {
+    "peerJoined": "{{name}} se unió",
+    "peerLeft": "{{name}} se fue",
+    "fileSent": "Enviado: {{name}}",
+    "fileDeclined": "{{name}} rechazó recibir el archivo",
+    "fileTimeout": "Solicitud de archivo expirada, sin respuesta del receptor",
+    "sendFailed": "Envío fallido: {{error}}",
+    "messageSent": "Mensaje enviado",
+    "autoAccepting": "Aceptando automáticamente archivo de {{name}}: {{file}}",
+    "peerRenamed": "{{oldName}} cambió su nombre a {{newName}}",
+    "retryFailed": "Reintento fallido: {{error}}",
+    "trusted": "Dispositivo confiado: {{name}}",
+    "untrusted": "Dispositivo no confiado: {{name}}",
+    "noDevices": "No hay dispositivos disponibles",
+    "selectDevice": "Por favor haga clic en el dispositivo de destino para enviar archivo",
+    "selectDeviceForText": "Por favor haga clic en el botón de mensaje del dispositivo de destino para enviar texto",
+    "copyFailed": "Copia fallida",
+    "shareNotSupported": "Su navegador no soporta compartir",
+    "shareFailed": "Compartir fallido",
+    "invalidRoomCode": "Por favor ingrese el código de sala completo de 6 dígitos",
+    "notificationPermissionDenied": "Permiso de notificación del navegador denegado"
+  },
+  "settings": {
+    "title": "Configuración",
+    "deviceName": "Nombre del dispositivo",
+    "currentRoom": "Sala actual",
+    "connectionStatus": "Estado de conexión",
+    "theme": {
+      "title": "Tema",
+      "description": "Elige el tema de la interfaz",
+      "system": "Sistema",
+      "light": "Claro",
+      "dark": "Oscuro"
+    },
+    "trustedDevices": "Dispositivos confiados",
+    "trustedDevicesHint": "Los archivos de dispositivos confiados serán aceptados automáticamente",
+    "noTrustedDevices": "No hay dispositivos confiados",
+    "unknownBrowser": "Navegador desconocido",
+    "clickToUntrust": "Clic para desconfiar",
+    "edit": "Editar",
+    "untrust": "Desconfiar",
+    "confirmUntrust": "¿Está seguro de que desea desconfiar de \"<strong>{{name}}</strong>\"?<br><br><span style=\"color: var(--text-muted)\">Después de desconfiar, los archivos de este dispositivo requerirán confirmación manual.</span>",
+    "keepTrust": "Mantener confianza",
+    "relayFallback": {
+      "title": "Respaldo por retransmisión",
+      "description": "Cambio automático a retransmisión cuando falla la conexión P2P",
+      "timeout": "Tiempo de respaldo"
+    },
+    "prewarm": {
+      "title": "Precalentamiento de conexión",
+      "description": "Establece conexiones previas al descubrir dispositivos"
+    },
+    "notifications": {
+      "title": "Notificaciones del navegador",
+      "description": "Mostrar notificaciones del navegador al recibir archivos o mensajes"
+    }
+  },
+  "navigation": {
+    "devices": "Dispositivos",
+    "room": "Sala",
+    "send": "Enviar",
+    "share": "Compartir",
+    "settings": "Configuración"
+  },
+  "quickActions": {
+    "title": "Enviar a...",
+    "sendFile": "Enviar archivo",
+    "sendFileDesc": "Seleccionar archivo para enviar al dispositivo",
+    "sendText": "Enviar texto",
+    "sendTextDesc": "Enviar mensaje de texto o enlace"
+  },
+  "fileTypes": {
+    "image": "Imagen",
+    "video": "Video",
+    "audio": "Audio",
+    "document": "Documento",
+    "archive": "Archivo comprimido",
+    "code": "Código",
+    "file": "Archivo"
+  },
+  "deviceTypes": {
+    "desktop": "Escritorio",
+    "mobile": "Móvil",
+    "tablet": "Tableta",
+    "unknown": "Dispositivo desconocido"
+  },
+  "errors": {
+    "connectionFailed": "Conexión fallida",
+    "transferFailed": "Transferencia fallida",
+    "fileTooBig": "Archivo demasiado grande",
+    "unsupportedBrowser": "Navegador no soportado",
+    "networkError": "Error de red",
+    "fileReadFailed": "Lectura de archivo fallida",
+    "imageLoadFailed": "Carga de imagen fallida"
+  },
+  "notification": {
+    "fileReceived": "Nuevo archivo recibido",
+    "fileReceivedBody": "{{sender}} le envió un archivo: {{file}}",
+    "messageReceived": "Nuevo mensaje",
+    "messageReceivedBody": "{{sender}} le envió un mensaje"
+  }
+}
